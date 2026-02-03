@@ -14,10 +14,29 @@
 
 // write a program that takes in a users firstname,lastname, age and country, and then outputs a greeting message using concatenation and string methods. The greeting message should include the users fullname in uppercase, age and country.
 
-const firstname = "Degual";
-const lastname = "Awa";
-const age = 19;
-const country = "NIGERIA";
-const fullname = `${firstname} ${lastname}`.toUpperCase();
-const greetingMessage = `Hello, my name is ${fullname}. I am ${age} years old and I live in ${country}.`;
-console.log(greetingMessage);
+// const firstname = "Degual";
+// const lastname = "Awa";
+// const age = 19;
+// const country = "NIGERIA";
+// const fullname = `${firstname} ${lastname}`.toUpperCase();
+// const greetingMessage = `Hello, my name is ${fullname}. I am ${age} years old and I live in ${country}.`;
+// console.log(greetingMessage);
+
+
+//assignment operators
+//write a program that calculates the area of a rectangle given its length and width using assignment operators.
+let length = 15;
+let width = 8;
+let area = length * width;
+console.log(area);
+
+//write a program that calculates the area of a circle given its radius using assignment and arithmetic operators.
+let radius = 8;
+const pi = 3.14;
+let areaOfCircle = pi * radius * radius;
+console.log(areaOfCircle);
+
+//write a program that converts temperature from Celsius to Fahrenheit using assignment and arithmetic operators.
+let celsius = 28;
+let fahrenheit = (celsius * 9/5) + 32;
+console.log(fahrenheit);
