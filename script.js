@@ -42,16 +42,51 @@
 // console.log(fahrenheit);
 
 //write a program that takes in a users age and outputs if the user is a child, teenager, adult.
-const age = 27;
-if (age < 13) {
-    console.log("the user is a child");
-} else if (age >= 13 && age < 20) {
-    console.log("the user is a teenager");
-} else {
-    console.log("the user is an adult");
-}
+// const age = 27;
+// if (age < 13) {
+//     console.log("the user is a child");
+// } else if (age >= 13 && age < 20) {
+//     console.log("the user is a teenager");
+// } else {
+//     console.log("the user is an adult");
+// }
 
-//loop through the numbers 1 to 50
-for (let i = 1; i <= 50; i++) {
-    console.log(i);
+// //loop through the numbers 1 to 50
+// for (let i = 1; i <= 50; i++) {
+//     console.log(i);
+// }
+
+//assignment arrays
+//write a program that takes a list of numbers, strings, booleans and nested arrays and outputs the sum of all the numbers in the list using for loop and length method.
+
+// using array method
+//add the first items
+//remove the last item
+//add the last item
+//remove the first item
+//get the index of one array
+//join them with comma
+//add two arrays together
+
+//write a program that collect data of foods with the following (type, class, quantity, description, name, and add 3 features to it, display how you destructure, rename, add value and use other operators)
+const food = {
+    type : "fruit",
+    class : "citrus",
+      quantity : 10,
+      description : "a citrus fruit that is sour and juicy",
+      name : "lemon",
+   
 }
+food.color = "yellow";
+food.taste = "sour";
+food.isFresh = true;
+
+//destructuring
+const {type, class : category, quantity, description, name, color, taste, isFresh}=food
+
+//renaming
+const { quantity : amount, description : about, color : foodColor, isFresh : freshness}=food
+   
+//spread operator
+const {... rest}= { type : "fruit", class : "citrus", quantity : 10, description : "a citrus fruit that is sour and juicy", name : "lemon", color : "yellow", taste : "sour", isFresh : true, }
+console.log(rest)
