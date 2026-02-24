@@ -89,4 +89,30 @@ const { quantity : amount, description : about, color : foodColor, isFresh : fre
    
 //spread operator
 const {... rest}= { type : "fruit", class : "citrus", quantity : 10, description : "a citrus fruit that is sour and juicy", name : "lemon", color : "yellow", taste : "sour", isFresh : true, }
-console.log(rest)
+console.log(rest) 
+
+
+//assignment on forEach
+//write a program that takes in an array of numbers and outputs the square of each number using forEach method
+const numbers = [1, 3, 5, 6, 9]
+numbers.forEach(num => console.log(num * num))
+
+//write a program that takes in an array of strings and outputs the length of each string using forEach method
+const strings = ["holla", "planet", "biology", "language"]
+strings.forEach(str => console.log(str.length))
+
+//for array destructuring
+//write a program that takes in an array of objects representing students with properties name and grade,and outputs the name of each student who received a grade of A using destructuring and forEach method
+const students = [
+    { name: "Ade", grade: "A" },
+    { name: "Bella", grade: "B" },
+    { name: "Chima", grade: "A" },
+    { name: "Daniel", grade: "C" }
+];
+ 
+students.forEach(student => {
+    const { name, grade } = student;
+    if (grade === "A") {
+        console.log(name);
+    }
+});
